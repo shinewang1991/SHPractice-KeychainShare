@@ -1,2 +1,3 @@
 # SHPractice-KeychainShare
 KeychainShare 多个app共享数据demo
+要保证多个app的KeychainShare功能设置里面加入共同的bunble id group

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SAMKeychain.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"其他app共享的数据-----%@",[SAMKeychain allAccounts]);
+    
+    //成功打印出SHPractice-Keychain app里存在keychain里的数据. 大公司的应用用的比较多，比如Google, FaceBook。
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
